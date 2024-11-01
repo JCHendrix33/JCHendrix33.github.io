@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LED Panel Calculator</title>
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="css/tooplate.css">
+</head>
+
+<body class="bg03">
+    <div class="container">
+        <div class="row tm-mt-big">
+            <div class="col-12 mx-auto tm-login-col">
+                <div class="bg-white tm-block">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <i class="fas fa-3x fa-tachometer-alt tm-site-icon text-center"></i>
+                            <h2 class="tm-block-title mt-3">Wall Configuration Input</h2>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <form action="/process_input" method="post" class="tm-login-form">
+                                <div class="input-group">
+                                    <label for="double_panels" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Double Panels</label>
+                                    <input name="double_panels" type="number" class="form-control validate" id="double_panels" required>
+                                </div>
+                                <div class="input-group mt-3">
+                                    <label for="single_panels" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Single Panels</label>
+                                    <input name="single_panels" type="number" class="form-control validate" id="single_panels" required>
+                                </div>
+                                <div class="input-group mt-3">
+                                    <label for="aspect_ratio" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Aspect Ratio</label>
+                                    <input name="aspect_ratio" type="text" class="form-control validate" id="aspect_ratio" placeholder="e.g., 16:9" required>
+                                </div>
+                                <div class="input-group mt-3">
+                                    <label for="num_walls" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Number of Walls</label>
+                                    <input name="num_walls" type="number" class="form-control validate" id="num_walls" required>
+                                </div>
+                                <div class="input-group mt-3">
+                                    <button type="submit" class="btn btn-primary d-inline-block mx-auto">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
